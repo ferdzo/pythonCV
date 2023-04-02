@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("image1.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("images/image1.jpg", cv2.IMREAD_GRAYSCALE)
 
 _5bit = np.divide(img, 8).astype('uint8')
 plt.imshow(_5bit, cmap='gray')
